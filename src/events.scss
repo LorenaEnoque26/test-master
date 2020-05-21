@@ -1,0 +1,96 @@
+.app {
+    min-height: 100%;
+    min-height: 100vh;
+    .app__components {
+      width: 55%;
+      margin: 0 auto;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      .app__components__events {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        grid-row-gap: 4rem;
+        grid-column-gap: 4rem;
+        .app__components__events__card {
+          height: 39rem;
+          box-shadow: 10px 10px 5px 0px rgba(146, 145, 145, 0.75);
+					.app__components__events__card__img {
+            max-height: 15rem;
+						img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              &:hover {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+              }
+						}
+          }
+          .app__components__events__card__body {
+            .app__components__events__card__body__text {
+              h2 {
+                color: #6495ED ;
+              }
+              p {
+                font-size: 12px;
+                color: gray;
+                margin-bottom: 30px;
+              }
+              i {
+                font-size: 18px;
+                color:gray;
+              }
+            }
+          }
+         .app__components__events__card__list {
+          font-size: 12px;
+          margin-bottom: 20px;
+          color: gray ;
+          span {
+            font-size: 14px;
+            color: #6495ED;
+          }
+          }
+          .app__components__events__card__footer {
+            .b-icon {
+              color: #6495ED;
+              margin-right: 5px;
+            }
+            b {
+              color: gray;
+            }
+          }
+          i {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 50rem) {
+    .app > .app__components > .app__components__events {
+      grid-template-columns: repeat(1, 100%);
+      .app__components__events__card{
+        height: 45rem;
+        box-shadow: none;
+      }
+    }
+  }
+  
+  @media (max-width: 86rem) {
+    .app > .app__components {
+      width: 75%;
+    }
+  }
+  
+  @media (max-width: 50rem) {
+    .app > .app__components {
+      width: 95%;
+    }
+  }
