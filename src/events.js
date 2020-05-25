@@ -1,11 +1,17 @@
 export default {
   data() {
     return {
-      //this is a datepicker v-model value
+      /**
+       * this is a datepicker v-model value.
+       */
       filterDate: null,
-      //this disables dates prior to today's date using the min-date of the datepicker
+      /**
+       * this disables dates prior to today's date using the min-date of the datepicker.
+       */
       min: new Date(),
-      //this is a json object of events
+      /**
+       * this is a json object of events.
+       */
       events: [
         {
           title: "Rock im Park",
@@ -83,7 +89,9 @@ export default {
     };
   },
   computed: {
-    //this is a filter that returns events between their respective start and end dates through the boostrap datepicker
+    /**
+     * this is a filter that returns events between their respective start and end dates through the boostrap datepicker.
+     */
     filteredData() {
       var date = this.filterDate;
       return this.events.filter(event => {
