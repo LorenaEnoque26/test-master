@@ -16,7 +16,6 @@
           >
           </b-form-datepicker>
           <!-- bootstrap calendar - end -->
-
           <!-- button reset date -->
           <template v-slot:append v-if="filterDate !== null">
             <b-button @click="filterDate = null">
@@ -126,4 +125,4 @@
 </template>
 
 <script src="./events.js"></script>
-<style lang="scss" src="./events.scss"></style>
+<style lang="scss" src="./assets/style/events.scss"></style>
